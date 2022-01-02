@@ -1,0 +1,97 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+img{
+  vertical-align: middle;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.sport-section{
+  display: block;
+  width: 491px;
+  margin: 0 auto;
+}
+.sport-section__title{
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.sport-section__form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sport-section__label{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+}
+.sport-section__label+.sport-section__label{
+  margin-top: 15px;
+}
+.sport-section__item{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-right: 10px;
+}
+.sport-section__input:checked ~ .sport-section__item--tennis{
+  background-image: url(../images/table-tennis.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sport-section__input:checked ~ .sport-section__item--basketbol{
+  background-image: url(../images/basketball-ball.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sport-section__input:checked ~ .sport-section__item--voleybol{
+  background-image: url(../images/volleyball-ball.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sport-section__input:checked ~ .sport-section__item--hokkey{
+  background-image: url(../images/hockey-puck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sport-section__label:nth-child(4) ~ .sport-section__label{
+  opacity: 0.6;
+}
+.sport-section__form__button{
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: slategray;
+  font-size: 22px;
+  margin: 0 auto;
+  -webkit-box-shadow: 9px 1px 10px black;
+          box-shadow: 9px 1px 10px black;
+}

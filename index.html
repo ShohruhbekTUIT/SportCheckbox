@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox</title>
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <!-- <link rel="stylesheet" href="./CSS/main.css"> -->
+  <link rel="stylesheet" href="./CSS/main min.css">
+</head>
+
+<body>
+
+  <div class="sport-section">
+    <h1 class="sport-section__title">
+      Qaysi sport turiga qiziqasiz?
+    </h1>
+    <form action="https://echo.htmlacademy.ru/" method="POST" class="sport-section__form">
+      <label class="sport-section__label">
+      <input class="sport-section__input visually-hidden" name="Stol tennisi" type="checkbox" value="Stol tennisi">
+      <span class="sport-section__item sport-section__item--tennis"></span>
+        Stol tennisi
+      </label>
+      <label class="sport-section__label">
+      <input class="sport-section__input visually-hidden" name="Basketbol" type="checkbox" value="Basketbol">
+      <span class="sport-section__item sport-section__item--basketbol"></span>
+        Basketbol
+      </label>
+      <label class="sport-section__label">
+      <input class="sport-section__input visually-hidden" name="Voleybol" type="checkbox" value="Voleybol">
+      <span class="sport-section__item sport-section__item--voleybol"></span>
+        Voleybol
+      </label>
+      <label class="sport-section__label">
+      <input class="sport-section__input visually-hidden" name="Hokkey" type="checkbox" value="Hokkey">
+      <span class="sport-section__item sport-section__item--hokkey"></span>
+        Hokkey
+      </label>
+      <br><br>
+      <label class="sport-section__label">
+      <input class="sport-section__input visually-hidden" name="Hokkey" type="checkbox" disabled>
+      <span class="sport-section__item sport-section__item--hokkey"></span>
+        Hokkey
+      </label>
+      <label class="sport-section__label">
+      <input class="sport-section__input visually-hidden" name="Hokkey" type="checkbox" disabled checked>
+      <span class="sport-section__item  sport-section__item--hokkey"></span>
+        Hokkey
+      </label>
+
+      <button type="submit" class="sport-section__form__button">
+        SEND
+      </button>
+    </form>
+  </div>
+
+</body>
+
+</html>
